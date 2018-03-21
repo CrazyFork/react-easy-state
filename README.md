@@ -1,3 +1,15 @@
+这个库的核心逻辑还是看, @nx-js/observer-util 这个库的写法, 这个repo唯一能参考的就是 view decorator 的写法.
+
+
+```js
+const isStatelessComp = !(Comp.prototype && Comp.prototype.isReactComponent)
+```
+
+
+
+
+
+
 # React Easy State
 
 Simple React state management. Made with :heart: and ES6 Proxies.
