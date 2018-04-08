@@ -1,5 +1,13 @@
 这个库的核心逻辑还是看, @nx-js/observer-util 这个库的写法, 这个repo唯一能参考的就是 view decorator 的写法.
 
+```js
+// view decorator 参数通过第二个参数设置的
+export default function view (Comp, { devtool: rawDevtool } = {}) {
+  return class ReactiveHOC extends BaseComp {}
+}
+// 还可以通过decorator 返回高阶函数来操作, 
+```
+
 
 ```js
 const isStatelessComp = !(Comp.prototype && Comp.prototype.isReactComponent)

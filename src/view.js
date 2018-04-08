@@ -12,6 +12,7 @@ export default function view (Comp, { devtool: rawDevtool } = {}) {
   // return a HOC which overwrites render, shouldComponentUpdate and componentWillUnmount
   // it decides when to run the new reactive methods and when to proxy to the original methods
   return class ReactiveHOC extends BaseComp {
+    // re-assign static properties
     static displayName = Comp.displayName || Comp.name;
     static contextTypes = Comp.contextTypes;
     static childContextTypes = Comp.childContextTypes;
